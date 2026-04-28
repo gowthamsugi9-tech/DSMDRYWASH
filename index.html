@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshWash Laundry - Professional Laundry & Dry Cleaning Service</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="loader-wrapper" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/assets/logo.jpeg" alt="">
+                <span>DSM DRYWASH</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text animate-on-scroll">
+                <h1>Premium Laundry & Dry Cleaning</h1>
+                <p class="tagline">Fresh, clean, and delivered to your door. Professional care for your garments.</p>
+                <div class="hero-buttons">
+                    <a href="#iframe" class="btn btn-primary">Book Pickup</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-image animate-on-scroll">
+                <div class="floating-card card-1">
+                    <i class="fas fa-clock"></i>
+                    <p>24hr Service</p>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-leaf"></i>
+                    <p>Eco-Friendly</p>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-truck"></i>
+                    <p>Free Pickup</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-decoration"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Our Services</h2>
+                <p>We offer comprehensive laundry solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="service-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Washing & Folding</h3>
+                    <p>Professional washing with premium detergents, perfectly folded and ready to wear.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Hot & Cold Water Options</li>
+                        <li><i class="fas fa-check"></i> Fabric Softener Included</li>
+                        <li><i class="fas fa-check"></i> Organized by Garment Type</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="service-icon">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <h3>Dry Cleaning</h3>
+                    <p>Expert dry cleaning for delicate fabrics and special garments with meticulous care.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Delicate Fabric Care</li>
+                        <li><i class="fas fa-check"></i> Stain Removal</li>
+                        <li><i class="fas fa-check"></i> Professional Press</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-on-scroll" style="animation-delay: 0.3s;">
+                    <div class="service-icon">
+                        <i class="fas fa-iron"></i>
+                    </div>
+                    <h3>Ironing & Pressing</h3>
+                    <p>Crisp, wrinkle-free clothes with professional ironing and steam pressing.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Steam Press Technology</li>
+                        <li><i class="fas fa-check"></i> Crease Perfection</li>
+                        <li><i class="fas fa-check"></i> Hang or Fold Options</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-on-scroll" style="animation-delay: 0.4s;">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Express Service</h3>
+                    <p>Need it fast? Same-day service available for urgent laundry needs.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 24-Hour Turnaround</li>
+                        <li><i class="fas fa-check"></i> Same-Day Available</li>
+                        <li><i class="fas fa-check"></i> Priority Processing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Transparent Pricing</h2>
+                <p>Affordable rates with no hidden charges</p>
+            </div>
+            <div class="pricing-table-wrapper animate-on-scroll">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Wash & Fold</th>
+                            <th>Dry Clean</th>
+                            <th>Iron Only</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-tshirt"></i> Cotton Saree</td>
+                            <td>₹100</td>
+                            <td>₹100</td>
+                            <td>₹50</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-vest"></i> Silk Cotton Saree</td>
+                            <td>₹150</td>
+                            <td>₹200</td>
+                            <td>₹50</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-socks"></i> Normal Cotton Saree</td>
+                            <td>₹50</td>
+                            <td>₹50</td>
+                            <td>₹40</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-person-dress"></i> Pattu Saree</td>
+                            <td>₹250-500</td>
+                            <td>₹250-500</td>
+                            <td>₹60</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-vest-patches"></i> Patuu Vesti+Shirt</td>
+                            <td>-</td>
+                            <td>₹200</td>
+                            <td>₹50</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-person-dress"></i> Pattu Pavaadai</td>
+                            <td>₹250</td>
+                            <td>₹250</td>
+                            <td>₹50</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div class="pricing-note animate-on-scroll">
+                <p><i class="fas fa-info-circle"></i>  | TRUST | CONVENIENCE | AFFORDABLE | </p>
+            </div>
+        </div>
+    </section>
+    <div id="iframe">
+        <iframe aria-label='Order Form' frameborder="0" style="height:500px;width:99%;border:none;" src='https://forms.zohopublic.in/gowthamsugi8gm1/form/OrderForm/formperma/1Tik1IpSCJlrokE4GPS-JXvDZZE6os7zPMrhXFEuJ7I' >
+        </iframe>
+    </div>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>How It Works</h2>
+                <p>Simple, convenient, and hassle-free</p>
+            </div>
+            <div class="steps-container">
+                <div class="step animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-mobile-screen-button"></i>
+                    </div>
+                    <h3>Schedule Pickup</h3>
+                    <p>Book online or call us. Choose your preferred time and Book your slot.</p>
+                </div>
+                <div class="step-arrow animate-on-scroll" style="animation-delay: 0.15s;">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-hands-bubbles"></i>
+                    </div>
+                    <h3>We Clean</h3>
+                    <p>Your clothes are professionally cleaned, dried, and prepared with expert care.</p>
+                </div>
+                <div class="step-arrow animate-on-scroll" style="animation-delay: 0.25s;">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step animate-on-scroll" style="animation-delay: 0.3s;">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-house-chimney"></i>
+                    </div>
+                    <h3> Delivery </h3>
+                    <p>Fresh, clean laundry delivered at your convenience time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image animate-on-scroll">
+                    <div class="about-image-wrapper">
+                        <div class="image-placeholder">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50K+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <h2>About FreshWash</h2>
+                    <p>Since 2014, FreshWash has been the trusted name in professional laundry and dry cleaning services. We combine traditional care with modern technology to deliver exceptional results.</p>
+                    <p>Our commitment to quality, convenience, and customer satisfaction has made us the preferred choice for thousands of families and businesses across the city.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-medal"></i>
+                            <div>
+                                <h4>Quality Guaranteed</h4>
+                                <p>We stand behind our work with a 100% satisfaction guarantee</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>Eco-Friendly</h4>
+                                <p>Using biodegradable detergents and sustainable practices</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-halved"></i>
+                            <div>
+                                <h4>Safe & Secure</h4>
+                                <p>Advanced tracking system for every garment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>What Our Customers Say</h2>
+                <p>Real reviews from real people</p>
+            </div>
+            <div class="testimonials-slider">
+                <button class="slider-btn prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonials-wrapper" id="testimonialsWrapper">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"FreshWash has been a lifesaver! The pickup and delivery service is so convenient, and my clothes always come back spotless and perfectly folded. Highly recommend!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Priya Sharma</h4>
+                                    <p>Regular Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The quality of dry cleaning is exceptional. They handled my expensive suits with great care. The express service saved me when I needed my clothes urgently for a business trip."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Rajesh Kumar</h4>
+                                    <p>Business Professional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Best laundry service in the city! They removed a stubborn stain from my favorite dress that I thought was ruined. The staff is friendly and professional. Five stars!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Anita Desai</h4>
+                                    <p>Homemaker</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"As a busy professional, FreshWash is perfect for me. The app makes booking easy, prices are reasonable, and the turnaround time is always on point. Couldn't be happier!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Vikram Singh</h4>
+                                    <p>Software Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Get In Touch</h2>
+                <p>We're here to help with all your laundry needs</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <div class="info-card">
+                        <div class="info-icon">
+                        <a href="https://maps.app.goo.gl/xdtv9GpKxMHVcCUH9" target="_blank"> <i class="fas fa-location-dot"></i> </a>
+                        </div>
+                        <a href="https://maps.app.goo.gl/xdtv9GpKxMHVcCUH9">View on Map</a>
+                        <div class="info-text">
+                            <h3>Visit Us</h3>
+                            <p>Chakra Nagar, 6/474, Rajaji Street, College Road,
+                            Velur PO
+                            <br> Paramathi Velur Taluk,
+                            Namakkal, PIN: 638182, Tamil Nadu, </p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Call Us</h3>
+                            <p>+91 9894795166<br>
+                                +91 97900 83001(Whatsapp)</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email Us</h3>
+                            <p>pmdhushanth0@gmail.com
+                                <br>gowthamsugi7@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Working Hours</h3>
+                            <p>Mon - Sat: 8:00 AM - 8:00 PM<br>Sunday: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Email Subscription</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone Number</label>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <label for="message">Review</label>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Thank you! You have been subscribed to our newsletter.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-tshirt"></i>
+                        <span>DSM Drywash</span>
+                    </div>
+                    <p>Your trusted partner for professional laundry and dry cleaning services. Quality care, delivered to your door.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Wash & Fold</a></li>
+                        <li><a href="#services">Dry Cleaning</a></li>
+                        <li><a href="#services">Ironing & Pressing</a></li>
+                        <li><a href="#services">Express Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-location-dot"></i>P.Velur, Namakkal </li>
+                        <li><i class="fas fa-phone"></i> +91  9894795166 / 97900 83001</li>
+                        <li><i class="fas fa-envelope"></i> pmdhushanth0@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DSM Drywash. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
